@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import WorldPopulationData from './datas/worldpopulation.json';
-import 'chart.js/dist/Chart.js'
-import 'chart.js/dist/Chart.css'
 
 export default class VisualData extends Component {
     constructor(props) {
@@ -43,7 +41,7 @@ export default class VisualData extends Component {
     render() {
         return (
             <div>
-                <canvas ref="myChart" width="400" height="400"></canvas>
+                <canvas width="400" height="400"></canvas>
             </div>
         )
     }
