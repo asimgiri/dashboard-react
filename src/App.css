@@ -1,22 +1,81 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
+body {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.has-radius {
+    border-radius: .25rem !important;
 }
 
-.App-link {
-  color: #09d3ac;
+.menu {
+    width: 260px;
+    border-right: 1px solid #dbdbdb;
+    height: 100vh;
+}
+
+.menu-list a {
+    padding: 1em .75em !important;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.menu-list .nested {
+    border-left: 0;
+    margin: 0 0 0 .75rem !important;
+}
+
+.menu-list .nested a {
+    font-size: 14px;
+    border-bottom: 1px solid rgb(228, 226, 226);
+    padding: .8rem .6rem !important;
+}
+
+.menu-list a:hover {
+    background-color: aliceblue !important;
+}
+
+.menu-list i {
+    margin-right: 4px;
+}
+
+.containers-column {
+    padding-top: 1.5rem !important;
+    padding-right: 1.75rem !important;
+}
+
+.containers-column .title {
+    margin-bottom: 1rem !important;
+}
+
+/* Dashboard Home */
+
+.dashboard .bgcol {
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .8)), url("https://picsum.photos/1280/300");
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .16s ease;
+}
+
+.dashboard .bgcol:hover {
+    transform: scale(1.02);
+}
+
+.dashboard .title small {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(0, 123, 255);
+    margin-top: .8rem;
+}
+
+.dashboard .bgcol .subtitle {
+    margin-top: 2rem !important;
+    line-height: 25px;
 }
